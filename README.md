@@ -1,4 +1,4 @@
-#Flutter codes (with comments)
+# Flutter codes (with comments)
 This is a Flutter codes repository created for Flutter codes.
 
 It includes a bunch of Flutter codes that are categorized by their names to represent what they turn out to be
@@ -9,5 +9,5 @@ applications of various types and usages.
 
 You can refer to the following reference on Google Codelab to try out tutorials for your own application development.
 
-#Reference
+## Reference
     https://codelabs.developers.google.com/?cat=Flutter
