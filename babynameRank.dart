@@ -78,6 +78,7 @@ class _MyHomePageState extends State<MyHomePage>{
             onPressed: (){
               setState((){
                 Firestore.instance.collection('baby').document(record.name).delete();
+                print(record.name);
               });
             },
           ),
@@ -159,6 +160,7 @@ class _MyHomePageState extends State<MyHomePage>{
                       'downvote' : downvote,
                     });
                   });
+                  print(name + ' successfully added to baby database...');
                 });
                 _nameController.clear();
                 Navigator.of(context).pop();
@@ -180,6 +182,7 @@ class Record{
   Record.fromMap(Map<String, dynamic> map, {this.reference})
     : assert(map['name'] != null),
       assert(map['upvote'] != null),
+      assert(map['downvote'] != null),
       name = map['name'],
       upvote = map['upvote'],
       downvote = map['downvote'];
